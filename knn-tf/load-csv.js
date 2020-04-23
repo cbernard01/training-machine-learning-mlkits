@@ -1,6 +1,6 @@
-const fs = require('fs');
-const _ = require('lodash');
-const shuffleSeed = require('shuffle-seed');
+const fs = require("fs");
+const _ = require("lodash");
+const shuffleSeed = require("shuffle-seed");
 
 function extractColumns(data, columnNames) {
   const headers = _.first(data);
@@ -21,7 +21,7 @@ module.exports = function loadCSV(
     splitTest = false
   }
 ) {
-  let data = fs.readFileSync(filename, { encoding: 'utf-8' });
+  let data = fs.readFileSync(filename, { encoding: "utf-8" });
   data = _.map(data.split('\n'), d => d.split(','));
   data = _.dropRightWhile(data, val => _.isEqual(val, ['']));
   const headers = _.first(data);
