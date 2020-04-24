@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
   "author": "",
+  "scripts": {
+    "start": "node index.js"
+  },
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs-node": "^0.1.17",

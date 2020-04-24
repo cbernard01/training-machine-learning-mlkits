@@ -26,7 +26,7 @@ function knn(features, labels, predictionPoint, k) {
 let {features, labels, testFeatures, testLabels} = loadCSV("kc_house_data.csv", {
   shuffle: true,
   splitTest: 10,
-  dataColumns: ["lat", "long", "bedrooms", "bathrooms", "sqft_living", "sqft_lot" ],
+  dataColumns: ["lat", "long", "sqft_living", "sqft_lot"],
   labelColumns: ["price"]
 });
 
